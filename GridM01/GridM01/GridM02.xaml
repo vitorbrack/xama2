@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GridM01.GridM02"
+             BackgroundColor="Black"
+             Title="Home">
+
+
+    <Grid BackgroundColor="Black" RowSpacing="10" ColumnSpacing="10" Margin="10,10,10,10" >
+        <Button Text="bt01" Grid.Row="0" Grid.Column="0" BackgroundColor="Yellow" CornerRadius="10"/>
+        <Button Text="bt02" Grid.Row="0" Grid.Column="1" BackgroundColor="Teal" CornerRadius="10"/>
+        <Button Text="bt03" Grid.Row="0" Grid.Column="2" BackgroundColor="Violet" CornerRadius="10"/>
+        <Button Text="bt04" Grid.Row="0" Grid.Column="3" BackgroundColor="Blue" CornerRadius="10"/>
+        <Button Text="bt05" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="Cyan" CornerRadius="10"/>
+        <Button Text="bt06" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" BackgroundColor="Cyan" CornerRadius="10"/>
+        <Button Text="bt07" Grid.Row="2" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="4" BackgroundColor="White" CornerRadius="10"/>
+        <Button Text="Ir" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="0"  Grid.ColumnSpan="4" BackgroundColor="Green" TextColor="White" FontSize="20"/>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+    </Grid>
+</ContentPage>

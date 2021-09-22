@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace GridM01.Droid
+namespace GridM01
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Calculadora : ContentPage
